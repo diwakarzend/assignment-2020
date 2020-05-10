@@ -3,12 +3,13 @@ import * as actions from '../actions/types'
 import axios from '../../utils/axios'
 //import urls from '../../utils/urls'
 import { bookList } from '../actions/bookAction'
+import {API_URL} from '../../utils/constants'
 
 
 function fetchBookList () {
   return axios.request({
     method: 'get',
-    url: "http://local.fabmailers.in/getAllBooks",
+    url: API_URL+"getAllBooks",
     headers: {
       'Content-Type': 'application/json'
     }

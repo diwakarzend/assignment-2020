@@ -8,7 +8,6 @@ class Book extends React.Component {
     super(props);
     this.state = { displaytab: false };
     props.fetchBookList();
-    console.log("adsfadsfadsfads",props.fetchBookList());
   }
 
   toggletab = () => {
@@ -22,7 +21,6 @@ class Book extends React.Component {
   
 
 render(){
-  console.log("sdfsdfsfsf",this.props.bookList);
     return(
         <div className="accordian-wrapper">         
          
